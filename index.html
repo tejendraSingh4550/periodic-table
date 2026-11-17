@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <title>Periodic Table — The Elements</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell"></live-server>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Elementa home"><span class="brand-mark">E</span><span>ELEMENTA<span class="brand-sub">THE PERIODIC TABLE</span></span></a>
+      <span class="edition"><span class="live-dot"></span> THE ELEMENTS · 01—118</span>
+    </header>
+
+    <section class="intro" id="top">
+      <div class="intro-copy"><p class="eyebrow">A MAP OF EVERYTHING</p><h1>The building blocks<br>of <span>everything.</span></h1><p class="lede">Explore the elements that make up our universe. Select an element to uncover its story.</p></div>
+      <div class="atomic-art" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="nucleus">e<sup>−</sup></span><i class="electron e-one"></i><i class="electron e-two"></i><i class="electron e-three"></i></div>
+    </section>
+
+    <section class="table-section" aria-label="Interactive periodic table">
+      <div class="table-toolbar"><div class="legend" id="legend" aria-label="Element categories"></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find an element…" autocomplete="off"><kbd>/</kbd></label></div>
+      <div class="table-scroll"><div class="periodic" id="periodic" aria-label="Periodic table"></div></div>
+      <div class="series-labels"><span class="series-note">57–71 &nbsp; LANTHANIDES</span><span class="series-note">89–103 &nbsp; ACTINIDES</span></div>
+      <p class="mobile-hint">← Scroll to explore all 18 groups →</p>
+    </section>
+
+    <section class="detail" id="detail" aria-live="polite"><div class="detail-symbol" id="detail-symbol">H</div><div class="detail-copy"><div class="detail-meta"><span id="detail-category">NONMETAL</span><span class="meta-dot">·</span><span id="detail-number">01</span></div><h2 id="detail-name">Hydrogen</h2><p id="detail-description">The lightest and most abundant element in the universe.</p></div><div class="detail-facts"><div><span>ATOMIC MASS</span><strong id="detail-mass">1.008</strong></div><div><span>GROUP</span><strong id="detail-group">1</strong></div><div><span>PERIOD</span><strong id="detail-period">1</strong></div></div><button class="close-detail" id="close-detail" aria-label="Close element details">×</button></section>
+
+    <footer><span>118 ELEMENTS, ONE UNIVERSE.</span><span>MADE OF MATTER <b>✳</b></span></footer>
+  </main>
+  <script>
+    const raw = `H|Hydrogen|1.008|nonmetal;He|Helium|4.0026|noble;Li|Lithium|6.94|alkali;Be|Beryllium|9.0122|alkaline;B|Boron|10.81|metalloid;C|Carbon|12.011|nonmetal;N|Nitrogen|14.007|nonmetal;O|Oxygen|15.999|nonmetal;F|Fluorine|18.998|halogen;Ne|Neon|20.180|noble;Na|Sodium|22.990|alkali;Mg|Magnesium|24.305|alkaline;Al|Aluminium|26.982|post;Si|Silicon|28.085|metalloid;P|Phosphorus|30.974|nonmetal;S|Sulfur|32.06|nonmetal;Cl|Chlorine|35.45|halogen;Ar|Argon|39.948|noble;K|Potassium|39.098|alkali;Ca|Calcium|40.078|alkaline;Sc|Scandium|44.956|transition;Ti|Titanium|47.867|transition;V|Vanadium|50.942|transition;Cr|Chromium|51.996|transition;Mn|Manganese|54.938|transition;Fe|Iron|55.845|transition;Co|Cobalt|58.933|transition;Ni|Nickel|58.693|transition;Cu|Copper|63.546|transition;Zn|Zinc|65.38|transition;Ga|Gallium|69.723|post;Ge|Germanium|72.630|metalloid;As|Arsenic|74.922|metalloid;Se|Selenium|78.971|nonmetal;Br|Bromine|79.904|halogen;Kr|Krypton|83.798|noble;Rb|Rubidium|85.468|alkali;Sr|Strontium|87.62|alkaline;Y|Yttrium|88.906|transition;Zr|Zirconium|91.224|transition;Nb|Niobium|92.906|transition;Mo|Molybdenum|95.95|transition;Tc|Technetium|98|transition;Ru|Ruthenium|101.07|transition;Rh|Rhodium|102.91|transition;Pd|Palladium|106.42|transition;Ag|Silver|107.87|transition;Cd|Cadmium|112.41|transition;In|Indium|114.82|post;Sn|Tin|118.71|post;Sb|Antimony|121.76|metalloid;Te|Tellurium|127.60|metalloid;I|Iodine|126.90|halogen;Xe|Xenon|131.29|noble;Cs|Caesium|132.91|alkali;Ba|Barium|137.33|alkaline;La|Lanthanum|138.91|lanth;Ce|Cerium|140.12|lanth;Pr|Praseodymium|140.91|lanth;Nd|Neodymium|144.24|lanth;Pm|Promethium|145|lanth;Sm|Samarium|150.36|lanth;Eu|Europium|151.96|lanth;Gd|Gadolinium|157.25|lanth;Tb|Terbium|158.93|lanth;Dy|Dysprosium|162.50|lanth;Ho|Holmium|164.93|lanth;Er|Erbium|167.26|lanth;Tm|Thulium|168.93|lanth;Yb|Ytterbium|173.05|lanth;Lu|Lutetium|174.97|lanth;Hf|Hafnium|178.49|transition;Ta|Tantalum|180.95|transition;W|Tungsten|183.84|transition;Re|Rhenium|186.21|transition;Os|Osmium|190.23|transition;Ir|Iridium|192.22|transition;Pt|Platinum|195.08|transition;Au|Gold|196.97|transition;Hg|Mercury|200.59|transition;Tl|Thallium|204.38|post;Pb|Lead|207.2|post;Bi|Bismuth|208.98|post;Po|Polonium|209|post;At|Astatine|210|halogen;Rn|Radon|222|noble;Fr|Francium|223|alkali;Ra|Radium|226|alkaline;Ac|Actinium|227|actinide;Th|Thorium|232.04|actinide;Pa|Protactinium|231.04|actinide;U|Uranium|238.03|actinide;Np|Neptunium|237|actinide;Pu|Plutonium|244|actinide;Am|Americium|243|actinide;Cm|Curium|247|actinide;Bk|Berkelium|247|actinide;Cf|Californium|251|actinide;Es|Einsteinium|252|actinide;Fm|Fermium|257|actinide;Md|Mendelevium|258|actinide;No|Nobelium|259|actinide;Lr|Lawrencium|266|actinide;Rf|Rutherfordium|267|transition;Db|Dubnium|268|transition;Sg|Seaborgium|269|transition;Bh|Bohrium|270|transition;Hs|Hassium|277|transition;Mt|Meitnerium|278|unknown;Ds|Darmstadtium|281|unknown;Rg|Roentgenium|282|unknown;Cn|Copernicium|285|transition;Nh|Nihonium|286|unknown;Fl|Flerovium|289|unknown;Mc|Moscovium|290|unknown;Lv|Livermorium|293|unknown;Ts|Tennessine|294|halogen;Og|Oganesson|294|noble`;
+    const elements = raw.split(';').map((s,i) => { const [symbol,name,mass,type]=s.split('|'); return {number:i+1,symbol,name,mass,type}; });
+    const positions = {};
+    const put=(period, entries)=>entries.forEach((n,i)=>positions[n]=[period,i+1]);
+    put(1,[1,2]); put(2,[3,4,5,6,7,8,9,10]); put(3,[11,12,13,14,15,16,17,18]);
+    put(4,Array.from({length:18},(_,i)=>19+i)); put(5,Array.from({length:18},(_,i)=>37+i));
+    [55,56, null,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86].forEach((n,i)=>{if(n) positions[n]=[6,i+1]});
+    [87,88,null,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118].forEach((n,i)=>{if(n) positions[n]=[7,i+1]});
+    for(let n=57;n<=71;n++) positions[n]=[9,n-56]; for(let n=89;n<=103;n++) positions[n]=[10,n-88];
+    const categories={alkali:'Alkali metal',alkaline:'Alkaline earth',transition:'Transition metal',post:'Post-transition',metalloid:'Metalloid',nonmetal:'Reactive nonmetal',halogen:'Halogen',noble:'Noble gas',lanth:'Lanthanide',actinide:'Actinide',unknown:'Unknown properties'};
+    const periodic=document.querySelector('#periodic');
+    elements.forEach(el=>{const [row,col]=positions[el.number]; const tile=document.createElement('button'); tile.className=`element ${el.type}`; tile.style.gridRow=row; tile.style.gridColumn=col; tile.dataset.number=el.number; tile.dataset.name=el.name.toLowerCase(); tile.setAttribute('aria-label',`${el.number} ${el.name}, ${categories[el.type]}`); tile.innerHTML=`<span class="atomic-number">${el.number}</span><strong>${el.symbol}</strong><span class="element-name">${el.name}</span>`; tile.addEventListener('click',()=>select(el,row,col)); periodic.append(tile);});
+    const legendTypes=['alkali','alkaline','transition','post','metalloid','nonmetal','halogen','noble','lanth','actinide'];
+    document.querySelector('#legend').innerHTML=legendTypes.map(t=>`<span class="legend-item"><i class="swatch ${t}"></i>${categories[t]}</span>`).join('');
+    const descriptions={H:'The lightest and most abundant element in the universe.',He:'A light, inert gas used in balloons and cryogenics.',C:'The versatile foundation of life and organic chemistry.',O:'A reactive gas essential to respiration and combustion.',Fe:'A strong, magnetic metal at the heart of steelmaking.',Au:'A rare, corrosion-resistant metal prized for its beauty.',Si:'A semiconductor that helped power the digital age.',U:'A dense radioactive metal used as nuclear fuel.'};
+    function select(el,row,col){document.querySelectorAll('.element').forEach(e=>e.classList.toggle('selected',Number(e.dataset.number)===el.number));document.querySelector('#detail-symbol').textContent=el.symbol;document.querySelector('#detail-name').textContent=el.name;document.querySelector('#detail-category').textContent=categories[el.type].toUpperCase();document.querySelector('#detail-number').textContent=String(el.number).padStart(2,'0');document.querySelector('#detail-mass').textContent=el.mass;document.querySelector('#detail-group').textContent=el.number>=57&&el.number<=71?'—':el.number>=89&&el.number<=103?'—':col;document.querySelector('#detail-period').textContent=row>7?(row===9?'6':'7'):row;document.querySelector('#detail-description').textContent=descriptions[el.symbol]||`${el.name} is a ${categories[el.type].toLowerCase()} with atomic number ${el.number}.`;document.querySelector('#detail').classList.add('visible');}
+    document.querySelector('#close-detail').addEventListener('click',()=>document.querySelector('#detail').classList.remove('visible'));
+    document.querySelector('#search').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();document.querySelectorAll('.element').forEach(tile=>tile.classList.toggle('dimmed',!!q&&!tile.dataset.name.includes(q)&&!tile.textContent.toLowerCase().includes(q)));});
+    document.addEventListener('keydown',e=>{if(e.key==='/'&&document.activeElement.tagName!=='INPUT'){e.preventDefault();document.querySelector('#search').focus()}if(e.key==='Escape'){document.querySelector('#search').value='';document.querySelector('#search').dispatchEvent(new Event('input'));document.querySelector('#detail').classList.remove('visible')}});
+    select(elements[0],1,1);
+  </script>
+</body>
+</html>
